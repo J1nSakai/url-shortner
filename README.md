@@ -95,6 +95,10 @@ url-shortener/
 │   │   ├── models/          # Database models
 │   │   │   ├── user.model.js
 │   │   │   └── shorturl.model.js
+│   │   ├── middleware/      # Express Middleware
+│   │   │   ├── auth.middleware.js
+│   │   │   ├── attachUser.js
+│   │   │   └── appError.js
 │   │   ├── routes/          # API routes
 │   │   │   ├── auth.routes.js
 │   │   │   ├── user.routes.js
@@ -104,10 +108,7 @@ url-shortener/
 │   │   │   └── mongodb.config.js
 │   │   └── utils/           # Utility functions
 │   │       └── helper.js
-│   ├── middleware/          # Express middleware
-│   │   ├── auth.middleware.js
-│   │   ├── attachUser.js
-│   │   └── appError.js
+│   │ 
 │   ├── app.js              # Express app setup
 │   └── package.json
 └── README.md
