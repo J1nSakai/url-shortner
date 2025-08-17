@@ -172,7 +172,7 @@ const RegisterForm = ({ onToggleForm }) => {
             Already have an account?{" "}
             <button
               onClick={() => {
-                onToggleForm(true);
+                navigate({ to: "/auth", search: { mode: "login" } });
               }}
               className="text-blue-600 hover:text-blue-700 font-medium"
             >

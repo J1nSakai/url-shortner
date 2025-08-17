@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { loginUser } from "../api/user.api";
 import { useSelector, useDispatch } from "react-redux";
 import { login } from "../store/slice/authSlice";
-import { useNavigate } from "@tanstack/react-router";
+import { useNavigate, useSearch } from "@tanstack/react-router";
 
-const LoginForm = ({ onToggleForm }) => {
+const LoginForm = () => {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -12,7 +12,6 @@ const LoginForm = ({ onToggleForm }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const auth = useSelector((state) => state.auth);
-  console.log(auth);
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -131,7 +130,7 @@ const LoginForm = ({ onToggleForm }) => {
             Don't have an account?{" "}
             <button
               onClick={() => {
-                onToggleForm(false);
+                navigate({ to: "/auth", search: { mode: "signup" } });
               }}
               className="text-blue-600 hover:text-blue-700 font-medium"
             >
