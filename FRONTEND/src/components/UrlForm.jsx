@@ -45,7 +45,7 @@ const UrlForm = () => {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-xl p-8 w-full max-w-md">
+    <div className="bg-blue-50 rounded-lg shadow-xl p-8 w-full max-w-md">
       <h1 className="text-3xl font-bold text-gray-800 text-center mb-8">
         URL Shortener
       </h1>
@@ -64,7 +64,7 @@ const UrlForm = () => {
             placeholder="www.example.com"
             value={url}
             onChange={(e) => setUrl(e.target.value)}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white"
             required
           />
         </div>
@@ -83,7 +83,7 @@ const UrlForm = () => {
               placeholder="Enter custom slug"
               value={customSlug}
               onChange={(e) => setCustomSlug(e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white"
             />
           </div>
         )}

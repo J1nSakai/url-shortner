@@ -107,15 +107,15 @@ const UserUrlList = () => {
   }
 
   return (
-    <div className="bg-white rounded-lg shadow-xl p-8">
+    <div className="bg-blue-50 rounded-lg shadow-xl p-8">
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-2xl font-bold text-gray-800">Your URLs</h2>
         <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
-          {urls.length} URLs
+          {urls.data.urls.length} URLs
         </span>
       </div>
 
-      {urls.length === 0 ? (
+      {urls.data.urls.length === 0 ? (
         <div className="text-center py-12">
           <svg
             className="w-16 h-16 text-gray-300 mx-auto mb-4"
@@ -138,11 +138,11 @@ const UserUrlList = () => {
           </p>
         </div>
       ) : (
-        <div className="space-y-4">
+        <div className="space-y-4 h-96 overflow-auto">
           {urls.data.urls.reverse().map((urlData) => (
             <div
               key={urlData._id}
-              className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
+              className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow bg-white"
             >
               <div className="flex items-start justify-between">
                 <div className="flex-1 min-w-0">
