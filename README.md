@@ -66,9 +66,6 @@ url-shortener/
 │   │   │   ├── HomePage.jsx
 │   │   │   ├── Auth.jsx
 │   │   │   └── Dashboard.jsx
-│   │   ├── hooks/           # Custom React hooks
-│   │   │   ├── useUserUrls.js
-│   │   │   └── useCreateUrl.js
 │   │   ├── store/           # Redux store and slices
 │   │   │   ├── store.js
 │   │   │   └── slice/
