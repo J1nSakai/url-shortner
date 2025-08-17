@@ -1,5 +1,5 @@
-import User from "../src/models/user.model.js";
-import { verifyToken } from "../src/utils/helper.js";
+import User from "../models/user.model.js";
+import { verifyToken } from "../utils/helper.js";
 
 export const authMiddleware = async (req, res, next) => {
   const token = req.cookies.accessToken;

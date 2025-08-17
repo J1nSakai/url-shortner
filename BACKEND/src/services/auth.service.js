@@ -1,4 +1,4 @@
-import { ConflictError, UnauthorizedError } from "../../middleware/appError.js";
+import { ConflictError, UnauthorizedError } from "../middleware/appError.js";
 import {
   createUser,
   findUserByEmail,

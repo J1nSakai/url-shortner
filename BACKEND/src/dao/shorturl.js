@@ -1,4 +1,4 @@
-import { AppError, ConflictError } from "../../middleware/appError.js";
+import { AppError, ConflictError } from "../middleware/appError.js";
 import shorturlModel from "../models/shorturl.model.js";
 
 export const saveShorturl = async (url, shortUrl, userId) => {

@@ -1,6 +1,6 @@
 import { generateNanoId } from "../utils/helper.js";
 import { saveShorturl, findCustomUrl } from "../dao/shorturl.js";
-import { AppError, ConflictError } from "../../middleware/appError.js";
+import { AppError, ConflictError } from "../middleware/appError.js";
 
 export const getWithoutUserShorturlService = async (url) => {
   try {

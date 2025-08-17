@@ -5,9 +5,9 @@ import connectDB from "./src/config/mongodb.config.js";
 import authRouter from "./src/routes/auth.routes.js";
 import shorturlRouter from "./src/routes/shorturl.route.js";
 import { redirectFromShorturl } from "./src/controllers/shorturl.controller.js";
-import { errorHandler } from "./middleware/appError.js";
+import { errorHandler } from "./src/middleware/appError.js";
 import cors from "cors";
-import { attachUser } from "./middleware/attachUser.js";
+import { attachUser } from "./src/middleware/attachUser.js";
 import cookieParser from "cookie-parser";
 import userRoutes from "./src/routes/user.routes.js";
 
