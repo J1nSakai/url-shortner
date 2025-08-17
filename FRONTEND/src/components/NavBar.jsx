@@ -1,11 +1,13 @@
 import React from "react";
 import { Link, useNavigate } from "@tanstack/react-router";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { logoutUser } from "../api/user.api";
+import { logout } from "../store/slice/authSlice";
 
 const NavBar = () => {
   const { isAutheticated } = useSelector((state) => state.auth);
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   return (
     <div className="flex flex-row w-full px-4 py-6 shadow justify-between items-center">
       <Link to={"/"} className="text-2xl font-bold">
@@ -33,6 +35,7 @@ const NavBar = () => {
             className="bg-blue-500 hover:bg-blue-700 text-white px-6 py-3 rounded-2xl transition-colors"
             onClick={async () => {
               await logoutUser();
+              dispatch(logout());
               navigate({ to: "/auth", search: { mode: "login" } });
             }}
           >
