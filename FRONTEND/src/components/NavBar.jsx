@@ -9,7 +9,7 @@ const NavBar = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   return (
-    <div className="flex flex-row w-full px-4 py-6 shadow justify-between items-center">
+    <div className="flex flex-row w-full px-4 py-6 border-b-2 justify-between items-center bg-blue-200">
       <Link to={"/"} className="text-2xl font-bold">
         <h1>URL Shortner</h1>
       </Link>

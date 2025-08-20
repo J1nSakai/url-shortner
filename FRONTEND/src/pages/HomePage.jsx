@@ -3,7 +3,7 @@ import UrlForm from "../components/UrlForm";
 
 const HomePage = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-blue-100">
+    <div className="flex justify-center items-center min-h-screen bg-background">
       <UrlForm />
     </div>
   );

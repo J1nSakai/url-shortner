@@ -4,7 +4,7 @@ import UserUrlList from "../components/UserUrlList";
 
 const Dashboard = () => {
   return (
-    <div className="min-h-[calc(100vh-80px)] bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
+    <div className="min-h-[calc(100vh-80px)] bg-background p-4">
       <div className="flex flex-row justify-center items-center space-y-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* URL Creation Form */}
